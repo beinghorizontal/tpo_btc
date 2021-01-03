@@ -8,6 +8,8 @@ pip install dash (update if previously installed)
 
 pip install pandas
 
+pip install requests
+
 ## Steps for live chat
 
 Download all the files or clone this repo as a zip and extract it in a local folder.
@@ -21,6 +23,8 @@ b) You have to make this shell script executable. Open the command prompt, cd to
 c) Double click the .sh file and a new tab will open in your default browser, wait for few seconds as it takes time to fetch the data from the servers and finish the one-time calculations for the context (this delay is only when you first run the shell script) and live chat will get automatically updated. That's it.
 
 By default only the current day is displayed, if you want to see more than one day then adjust the slider at the bottom (see the 1st image below)
+
+If you want to use volume profile instead of TPO profile (based on price), then edit the code btc_mp_v1.py and go to the line 55 and replace mode ='tpo' by mode ='vol'. You don't need to close the live chart if it is open, chart will automatically refresh (Unless you executed the code from ipython console) and the code will use volume for all market profile related calculations. 
 
 ## What is new
 
