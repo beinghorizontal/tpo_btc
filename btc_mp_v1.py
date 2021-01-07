@@ -201,7 +201,7 @@ def update_graph(n, value):
         commentary_text = (
         '<br />Insights:<br />High: {}<br />Low: {}<br />Day_Range: {}<br />VAH:  {}<br /> POC:  {}<br /> VAL:  {}<br /> Balance Target:  '
         '{}<br /> Day Type:  {}<br />strength: {}%<br /><br />strength BreakDown:  {}<br />{}<br />{}'.format(
-            dh_list[i], dl_list[i],dh_list[i]- dl_list[i],
+            dh_list[i], dl_list[i],round(dh_list[i]- dl_list[i],2),
             irank.vahlist,
             irank.poclist, irank.vallist, irank.btlist, irank.daytype, irank.power, '',
             '-------------------', breakdown_values))
